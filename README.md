@@ -13,6 +13,6 @@ The PersistentChatSdk is available for download here:
 https://www.microsoft.com/en-us/download/details.aspx?id=35458
 
 Before using the module, please make sure you add the required dlls to the root of the folder, the module requires:
-Microsoft.Rtc.Collaboration.dll
-Microsoft.Rtc.Collaboration.PersistentChat.dll
-Microsoft.Rtc.Chat.Endpoint.dll
+- Microsoft.Rtc.Collaboration.dll
+- Microsoft.Rtc.Collaboration.PersistentChat.dll
+- Microsoft.Rtc.Chat.Endpoint.dll
