@@ -15,7 +15,7 @@
     $collaborationPlatform.AllowedAuthenticationProtocol = 'Kerberos'
 
     $collaborationPlatform.EndStartup($collaborationPlatform.BeginStartup($null,$null))
-    $userEndpointSettings = [Microsoft.Rtc.Collaboration.UserEndpointSettings]::new('sip:daniel@poshboth.nl')
+    $userEndpointSettings = [Microsoft.Rtc.Collaboration.UserEndpointSettings]::new($SipAddress)
     $userEndpointSettings.Credential = $Credential.GetNetworkCredential()
     $userEndpoint = [Microsoft.Rtc.Collaboration.UserEndpoint]::new($collaborationPlatform,$userEndpointSettings)
     $null = $userEndpoint.EndEstablish($userEndpoint.BeginEstablish($null,$null))
